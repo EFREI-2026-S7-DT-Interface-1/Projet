@@ -3,55 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nomade Numérique</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Numérique - Accueil</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>Prénom NOM</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">Formations</a></li>
-                    <li><a href="#">Expériences</a></li>
-                    <li><a href="#">Loisirs</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="burger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-        <div class="dropdown-menu">
-            <a href="#">Formations</a>
-            <a href="#">Expériences</a>
-            <a href="#">Loisirs</a>
-            <a href="#">Contact</a>
-        </div>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Maxime Alves et Alix Brunet</a>
+            <div class="nav-menu">
+                <a href="#" class="nav-link">Formations</a>
+                <a href="#" class="nav-link">Expériences</a>
+                <a href="#" class="nav-link">Loisirs</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="burger-menu" aria-label="Menu">☰</button>
+        </nav>
     </header>
 
-    <main>
-        <section class="intro">
-            <img src="portrait.jpg" alt="Portrait de Prénom">
-            <div class="intro-text">
-                <h2>Prénom, un nomade numérique</h2>
-                <button>CONTACT</button>
+    <main class="main">
+		<img src="./portrait.png" alt="Portrait professionnel" class="hero-img">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Prénom, un nomade numérique</h1><br>
+                <a href="contact.html" class="contact-btn">CONTACT</a>
             </div>
         </section>
-
-        <section class="contact-form">
-            <h2>CONTACT</h2>
-            <form>
-                <input type="text" placeholder="Prénom" required>
-                <input type="text" placeholder="Nom" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit">ENVOYER</button>
-            </form>
-        </section>
     </main>
-
-    <script src="script.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
